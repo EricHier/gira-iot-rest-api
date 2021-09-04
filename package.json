@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Gira IoT REST API node.js implementation",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/EricHier/gira-iot-rest-api/issues"
   },
-  "homepage": "https://github.com/EricHier/gira-iot-rest-api#readme"
+  "homepage": "https://github.com/EricHier/gira-iot-rest-api#readme",
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "node-fetch": "^3.0.0"
+  }
 }
