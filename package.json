@@ -1,0 +1,19 @@
+{
+  "name": "gira-iot-rest-api",
+  "version": "1.0.0",
+  "description": "Gira IoT REST API node.js implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricHier/gira-iot-rest-api.git"
+  },
+  "author": "Eric Feltgen <developer.erichier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EricHier/gira-iot-rest-api/issues"
+  },
+  "homepage": "https://github.com/EricHier/gira-iot-rest-api#readme"
+}
