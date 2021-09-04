@@ -41,10 +41,12 @@ export default class GiraSmartHomeClient {
             if (registration.status !== 201)
                 throw Error("Invalid credentials for registration");
 
-            if (this.debug)
-                console.log("Registration API content", await registration.json(), "status code", registration.status);
+            const content = await registration.json();
 
-            this.token = (await registration.json()).token;
+            if (this.debug)
+                console.log("Registration API content", content, "status code", registration.status);
+
+            this.token = content.token;
 
             return this;
         })();
@@ -83,7 +85,7 @@ export default class GiraSmartHomeClient {
         });
 
         if (request.status !== 200)
-            throw Error("Unable to fetch value for uid " + uid);
+            throw Error("Unable to set value for uid " + uid);
     }
 
 }
